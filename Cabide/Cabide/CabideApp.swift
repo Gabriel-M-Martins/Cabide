@@ -13,7 +13,16 @@ struct CabideApp: App {
     
     var body: some Scene {
         WindowGroup {
-            DatabaseExampleView()
+            TabView {
+                DatabaseExampleView()
+                    .tabItem {
+                        Label("Example", systemImage: "list.dash")
+                    }
+                ClothingView()
+                    .tabItem {
+                        Label("Clothes", systemImage: "tshirt")
+                    }
+            }
         }
     }
 }

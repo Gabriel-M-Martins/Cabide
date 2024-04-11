@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1832A22BC768CC00BCBF30 /* Cabide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A02BC768CC00BCBF30 /* Cabide.xcdatamodeld */; };
+		0B1832A52BC76A8000BCBF30 /* ClothingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */; };
+		0B1832A72BC76AA500BCBF30 /* RemoveBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */; };
+		0B1832A92BC76AC800BCBF30 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A82BC76AC800BCBF30 /* ClothingView.swift */; };
 		A71E37E82BB274B100274DC1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E72BB274B100274DC1 /* Category.swift */; };
 		A71E37EA2BB2772400274DC1 /* Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E92BB2772400274DC1 /* Look.swift */; };
 		A71E37EC2BB2785400274DC1 /* ClothingAtLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */; };
@@ -19,7 +23,6 @@
 		A76AE3102BB23BF00077A872 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE30F2BB23BF00077A872 /* Persistence.swift */; };
 		A76AE3312BB23CF70077A872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE3302BB23CF70077A872 /* AppDelegate.swift */; };
 		A76AE3332BB23F3A0077A872 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE3322BB23F3A0077A872 /* Models.swift */; };
-		A76AE3392BB240800077A872 /* Cabide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A76AE3372BB240800077A872 /* Cabide.xcdatamodeld */; };
 		A797C2C32BA6388800F78833 /* CabideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797C2C22BA6388800F78833 /* CabideApp.swift */; };
 		A797C2C52BA6388800F78833 /* DatabaseExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */; };
 		A797C2C72BA6388900F78833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A797C2C62BA6388900F78833 /* Assets.xcassets */; };
@@ -42,6 +45,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B1832A12BC768CC00BCBF30 /* Cabide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cabide.xcdatamodel; sourceTree = "<group>"; };
+		0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewModel.swift; sourceTree = "<group>"; };
+		0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundView.swift; sourceTree = "<group>"; };
+		0B1832A82BC76AC800BCBF30 /* ClothingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingView.swift; sourceTree = "<group>"; };
 		A71E37E72BB274B100274DC1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A71E37E92BB2772400274DC1 /* Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Look.swift; sourceTree = "<group>"; };
 		A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingAtLook.swift; sourceTree = "<group>"; };
@@ -52,7 +59,6 @@
 		A76AE30F2BB23BF00077A872 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A76AE3302BB23CF70077A872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A76AE3322BB23F3A0077A872 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		A76AE3382BB240800077A872 /* Cabide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cabide.xcdatamodel; sourceTree = "<group>"; };
 		A797C2BF2BA6388800F78833 /* Cabide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A797C2C22BA6388800F78833 /* CabideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabideApp.swift; sourceTree = "<group>"; };
 		A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseExampleView.swift; sourceTree = "<group>"; };
@@ -73,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1832A32BC76A0900BCBF30 /* Clothes */ = {
+			isa = PBXGroup;
+			children = (
+				0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */,
+				0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */,
+				0B1832A82BC76AC800BCBF30 /* ClothingView.swift */,
+			);
+			path = Clothes;
+			sourceTree = "<group>";
+		};
 		A76AE2C32BB231100077A872 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,13 +131,14 @@
 		A797C2C12BA6388800F78833 /* Cabide */ = {
 			isa = PBXGroup;
 			children = (
+				0B1832A32BC76A0900BCBF30 /* Clothes */,
+				0B1832A02BC768CC00BCBF30 /* Cabide.xcdatamodeld */,
 				A797C2C22BA6388800F78833 /* CabideApp.swift */,
 				A76AE3302BB23CF70077A872 /* AppDelegate.swift */,
 				A76AE30F2BB23BF00077A872 /* Persistence.swift */,
 				A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */,
 				A76AE2D22BB232E80077A872 /* Models */,
 				A797C2C82BA6388900F78833 /* Preview Content */,
-				A76AE3372BB240800077A872 /* Cabide.xcdatamodeld */,
 				A797C2C62BA6388900F78833 /* Assets.xcassets */,
 			);
 			path = Cabide;
@@ -208,14 +225,17 @@
 			files = (
 				A797C2C52BA6388800F78833 /* DatabaseExampleView.swift in Sources */,
 				A76AE3102BB23BF00077A872 /* Persistence.swift in Sources */,
-				A76AE3392BB240800077A872 /* Cabide.xcdatamodeld in Sources */,
 				A76AE2D42BB233180077A872 /* Clothing.swift in Sources */,
 				A76AE3332BB23F3A0077A872 /* Models.swift in Sources */,
 				A76AE3312BB23CF70077A872 /* AppDelegate.swift in Sources */,
+				0B1832A22BC768CC00BCBF30 /* Cabide.xcdatamodeld in Sources */,
+				0B1832A92BC76AC800BCBF30 /* ClothingView.swift in Sources */,
 				A71E37EA2BB2772400274DC1 /* Look.swift in Sources */,
 				A71E37EE2BB27DF500274DC1 /* Collection.swift in Sources */,
 				A71E37EC2BB2785400274DC1 /* ClothingAtLook.swift in Sources */,
 				A797C2C32BA6388800F78833 /* CabideApp.swift in Sources */,
+				0B1832A52BC76A8000BCBF30 /* ClothingViewModel.swift in Sources */,
+				0B1832A72BC76AA500BCBF30 /* RemoveBackgroundView.swift in Sources */,
 				A71E37E82BB274B100274DC1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cabide/Preview Content\"";
-				DEVELOPMENT_TEAM = 73DNAYF2TM;
+				DEVELOPMENT_TEAM = 3GNMJZ6Q8Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -358,6 +378,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,7 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cabide/Preview Content\"";
-				DEVELOPMENT_TEAM = 73DNAYF2TM;
+				DEVELOPMENT_TEAM = 3GNMJZ6Q8Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -387,6 +408,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,14 +446,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A76AE3372BB240800077A872 /* Cabide.xcdatamodeld */ = {
+		0B1832A02BC768CC00BCBF30 /* Cabide.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A76AE3382BB240800077A872 /* Cabide.xcdatamodel */,
+				0B1832A12BC768CC00BCBF30 /* Cabide.xcdatamodel */,
 			);
-			currentVersion = A76AE3382BB240800077A872 /* Cabide.xcdatamodel */;
-			name = Cabide.xcdatamodeld;
-			path = /Users/gabrielmedeirosmartins/Documents/prog/swift/cabide/Cabide/Cabide/Cabide.xcdatamodeld;
+			currentVersion = 0B1832A12BC768CC00BCBF30 /* Cabide.xcdatamodel */;
+			path = Cabide.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
