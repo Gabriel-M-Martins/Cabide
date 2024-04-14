@@ -9,11 +9,27 @@ import PhotosUI
 import SwiftUI
 
 struct ClothingView: View {
-    @ObservedObject var viewModel: ClothingViewModel = ClothingViewModel()
+    @StateObject private var vm: ClothingViewModel
+    
+    init() {
+        _vm = .init(wrappedValue: ClothingViewModel())
+    }
     
     var body: some View {
         VStack {
-            RemoveBackgroundView()
+            Image(uiImage: vm.image)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 700, height: 300)
+            RemoveBackgroundView { image in
+                vm.updateClothingImage(image)
+            }
+            
+            Button("Save") {
+                vm.save()
+            }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
         }
     }
 }

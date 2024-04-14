@@ -17,6 +17,12 @@ class RemoveBackgroundViewModel: ObservableObject {
     @Published var clothingUiimage: UIImage?
     @Published var isLoading: Bool = false
     
+    var updateClothingImageClosure: ((UIImage) -> Void)?
+    
+    init(updateClothingImageClosure: ((UIImage) -> Void)?) {
+        self.updateClothingImageClosure = updateClothingImageClosure
+    }
+    
     func removeBackground(inputClothingImage: UIImage?) {
         self.isLoading = true
         guard let image = inputClothingImage else { return }
@@ -38,6 +44,7 @@ class RemoveBackgroundViewModel: ObservableObject {
             
             DispatchQueue.main.async {
                 self.image = image
+                self.updateClothingImageClosure?(image)
                 self.isLoading = false
             }
         }

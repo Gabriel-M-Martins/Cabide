@@ -14,9 +14,10 @@ struct RemoveBackgroundView: View {
     @StateObject private var vm: RemoveBackgroundViewModel
     
     @State private var photoPickerItem: PhotosPickerItem?
+    var updateClothingImageClosure: ((UIImage) -> Void)?
     
-    init() {
-        _vm = .init(wrappedValue: RemoveBackgroundViewModel())
+    init(updateClothingImageClosure: ((UIImage) -> Void)?) {
+        _vm = .init(wrappedValue: RemoveBackgroundViewModel(updateClothingImageClosure: updateClothingImageClosure))
     }
     
     var body: some View {
@@ -24,10 +25,6 @@ struct RemoveBackgroundView: View {
             if vm.isLoading {
                 ProgressView()
             } else {
-                Image(uiImage: vm.image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 700, height: 300)
                 PhotosPicker("Select photo", selection: $photoPickerItem, matching: .images)
             }
         }
@@ -45,6 +42,6 @@ struct RemoveBackgroundView: View {
     }
 }
 
-#Preview {
-    RemoveBackgroundView()
-}
+//#Preview {
+//    RemoveBackgroundView()
+//}

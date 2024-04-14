@@ -11,6 +11,8 @@
 		0B1832A52BC76A8000BCBF30 /* ClothingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */; };
 		0B1832A72BC76AA500BCBF30 /* RemoveBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */; };
 		0B1832A92BC76AC800BCBF30 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A82BC76AC800BCBF30 /* ClothingView.swift */; };
+		0B2442A72BCC8EF700432400 /* ClothingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2442A62BCC8EF700432400 /* ClothingListViewModel.swift */; };
+		0B2442A92BCC8F8600432400 /* ClothingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2442A82BCC8F8600432400 /* ClothingListView.swift */; };
 		0BF74F662BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF74F652BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift */; };
 		A71E37E82BB274B100274DC1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E72BB274B100274DC1 /* Category.swift */; };
 		A71E37EA2BB2772400274DC1 /* Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E92BB2772400274DC1 /* Look.swift */; };
@@ -50,6 +52,8 @@
 		0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewModel.swift; sourceTree = "<group>"; };
 		0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundView.swift; sourceTree = "<group>"; };
 		0B1832A82BC76AC800BCBF30 /* ClothingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingView.swift; sourceTree = "<group>"; };
+		0B2442A62BCC8EF700432400 /* ClothingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingListViewModel.swift; sourceTree = "<group>"; };
+		0B2442A82BCC8F8600432400 /* ClothingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingListView.swift; sourceTree = "<group>"; };
 		0BF74F652BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundViewModel.swift; sourceTree = "<group>"; };
 		A71E37E72BB274B100274DC1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A71E37E92BB2772400274DC1 /* Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Look.swift; sourceTree = "<group>"; };
@@ -84,12 +88,22 @@
 		0B1832A32BC76A0900BCBF30 /* Clothes */ = {
 			isa = PBXGroup;
 			children = (
+				0B2442A52BCC8ED700432400 /* ClothingList */,
 				0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */,
 				0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */,
 				0B1832A82BC76AC800BCBF30 /* ClothingView.swift */,
 				0BF74F652BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift */,
 			);
 			path = Clothes;
+			sourceTree = "<group>";
+		};
+		0B2442A52BCC8ED700432400 /* ClothingList */ = {
+			isa = PBXGroup;
+			children = (
+				0B2442A62BCC8EF700432400 /* ClothingListViewModel.swift */,
+				0B2442A82BCC8F8600432400 /* ClothingListView.swift */,
+			);
+			path = ClothingList;
 			sourceTree = "<group>";
 		};
 		A76AE2C32BB231100077A872 /* Frameworks */ = {
@@ -229,9 +243,11 @@
 				A797C2C52BA6388800F78833 /* DatabaseExampleView.swift in Sources */,
 				A76AE3102BB23BF00077A872 /* Persistence.swift in Sources */,
 				A76AE2D42BB233180077A872 /* Clothing.swift in Sources */,
+				0B2442A92BCC8F8600432400 /* ClothingListView.swift in Sources */,
 				A76AE3332BB23F3A0077A872 /* Models.swift in Sources */,
 				A76AE3312BB23CF70077A872 /* AppDelegate.swift in Sources */,
 				0BF74F662BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift in Sources */,
+				0B2442A72BCC8EF700432400 /* ClothingListViewModel.swift in Sources */,
 				0B1832A22BC768CC00BCBF30 /* Cabide.xcdatamodeld in Sources */,
 				0B1832A92BC76AC800BCBF30 /* ClothingView.swift in Sources */,
 				A71E37EA2BB2772400274DC1 /* Look.swift in Sources */,

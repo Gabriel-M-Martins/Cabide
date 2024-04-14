@@ -18,6 +18,10 @@ struct CabideApp: App {
                     .tabItem {
                         Label("Example", systemImage: "list.dash")
                     }
+                ClothingListView()
+                    .tabItem {
+                        Label("List clothes", systemImage: "tshirt")
+                    }
                 ClothingView()
                     .tabItem {
                         Label("Clothes", systemImage: "tshirt")
