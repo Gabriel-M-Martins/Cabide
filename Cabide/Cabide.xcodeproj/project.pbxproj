@@ -11,6 +11,7 @@
 		0B1832A52BC76A8000BCBF30 /* ClothingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */; };
 		0B1832A72BC76AA500BCBF30 /* RemoveBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */; };
 		0B1832A92BC76AC800BCBF30 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1832A82BC76AC800BCBF30 /* ClothingView.swift */; };
+		0BF74F662BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF74F652BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift */; };
 		A71E37E82BB274B100274DC1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E72BB274B100274DC1 /* Category.swift */; };
 		A71E37EA2BB2772400274DC1 /* Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E92BB2772400274DC1 /* Look.swift */; };
 		A71E37EC2BB2785400274DC1 /* ClothingAtLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */; };
@@ -49,6 +50,7 @@
 		0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewModel.swift; sourceTree = "<group>"; };
 		0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundView.swift; sourceTree = "<group>"; };
 		0B1832A82BC76AC800BCBF30 /* ClothingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingView.swift; sourceTree = "<group>"; };
+		0BF74F652BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundViewModel.swift; sourceTree = "<group>"; };
 		A71E37E72BB274B100274DC1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A71E37E92BB2772400274DC1 /* Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Look.swift; sourceTree = "<group>"; };
 		A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingAtLook.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				0B1832A42BC76A8000BCBF30 /* ClothingViewModel.swift */,
 				0B1832A62BC76AA500BCBF30 /* RemoveBackgroundView.swift */,
 				0B1832A82BC76AC800BCBF30 /* ClothingView.swift */,
+				0BF74F652BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift */,
 			);
 			path = Clothes;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				A76AE2D42BB233180077A872 /* Clothing.swift in Sources */,
 				A76AE3332BB23F3A0077A872 /* Models.swift in Sources */,
 				A76AE3312BB23CF70077A872 /* AppDelegate.swift in Sources */,
+				0BF74F662BCC09AD00FBED58 /* RemoveBackgroundViewModel.swift in Sources */,
 				0B1832A22BC768CC00BCBF30 /* Cabide.xcdatamodeld in Sources */,
 				0B1832A92BC76AC800BCBF30 /* ClothingView.swift in Sources */,
 				A71E37EA2BB2772400274DC1 /* Look.swift in Sources */,

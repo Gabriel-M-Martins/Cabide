@@ -11,21 +11,20 @@ import PhotosUI
 import SwiftUI
 
 struct RemoveBackgroundView: View {
-    @ObservedObject var viewModel: ClothingViewModel
+    @StateObject private var vm: RemoveBackgroundViewModel
     
     @State private var photoPickerItem: PhotosPickerItem?
-    @State private var clothingImage: Image?
     
-    init(viewModel: ClothingViewModel) {
-        self.viewModel = viewModel
+    init() {
+        _vm = .init(wrappedValue: RemoveBackgroundViewModel())
     }
     
     var body: some View {
         VStack {
-            if viewModel.isLoading {
+            if vm.isLoading {
                 ProgressView()
             } else {
-                Image(uiImage: viewModel.image)
+                Image(uiImage: vm.image)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 700, height: 300)
@@ -36,7 +35,7 @@ struct RemoveBackgroundView: View {
             Task {
                 if let data = try? await photoPickerItem?.loadTransferable(type: Data.self) {
                     if let uiImage = UIImage(data: data) {
-                        viewModel.removeBackground(inputClothingImage: uiImage)
+                        vm.removeBackground(inputClothingImage: uiImage)
                     }
                 } else {
                     print("Failed")
@@ -47,5 +46,5 @@ struct RemoveBackgroundView: View {
 }
 
 #Preview {
-    RemoveBackgroundView(viewModel: ClothingViewModel())
+    RemoveBackgroundView()
 }

@@ -13,7 +13,7 @@ struct ClothingView: View {
     
     var body: some View {
         VStack {
-            RemoveBackgroundView(viewModel: viewModel)
+            RemoveBackgroundView()
         }
     }
 }
