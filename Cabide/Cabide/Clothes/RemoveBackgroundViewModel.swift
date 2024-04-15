@@ -14,7 +14,6 @@ class RemoveBackgroundViewModel: ObservableObject {
     private var processingQueue = DispatchQueue(label: "ProcessingQueue")
     
     @Published var image: UIImage = UIImage()
-    @Published var clothingUiimage: UIImage?
     @Published var isLoading: Bool = false
     
     func removeBackground(inputClothingImage: UIImage?) {
